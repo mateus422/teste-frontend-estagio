@@ -1,6 +1,6 @@
 @charset "utf-8";
 @font-face {
-    font-family: "Myriad Pro Regular";
+    font-family: "Myriad Pro Light";
     src: url("_fontes/MyriadPro-Light.otf");
 }
 
@@ -30,14 +30,14 @@ header {
 
 .pTitleHeader {
     color: #8e98a2;
-    font-family: "Myriad Pro Regular";
+    font-family: "Myriad Pro Light";
     font-size: 50px;
     text-align: center;
 }
 
 .pSecondHeader {
     color: #8e98a2;
-    font-family: 'Myriad Pro Regular';
+    font-family: "Myriad Pro Light";
     font-size: 30px;
     line-height: 200%;
     padding-bottom: 30px;
@@ -67,29 +67,29 @@ nav {
 .pNav {
     color: #fff;
     float: left;
-    font-family: 'Myriad Pro Regular';
+    font-family: "Myriad Pro Light";
     font-size: 30px;
     font-weight: bold;
     line-height: 150%;
     padding-left: 20%;
 }
 
-ul {
+.ulNav {
     float: right;
-    font-family: 'Myriad Pro Regular';
+    font-family: "Myriad Pro Light";
     list-style-type: none;
     padding-right: 20%;
 }
 
-li {
+.liNav {
     color: #8e98a2;
-    line-height: 300%;
     display: inline-block;
+    line-height: 300%;
     margin-right: 35px;
     transition: 1s;
 }
 
-li:hover {
+.liNav:hover {
     color: #fff;
     transition: 2s;
 }
@@ -106,7 +106,7 @@ section {
 
 .pTitle {
     color: #6b6b6b;
-    font-family: 'Myriad Pro Regular';
+    font-family: "Myriad Pro Light";
     font-size: 50px;
     padding-top: 50px;
     text-align: center;
@@ -114,9 +114,10 @@ section {
 
 .pAbout,
 .pTeam,
+.pContact,
 .pfigText {
     color: #6b6b6b;
-    font-family: 'Myriad Pro Regular';
+    font-family: "Myriad Pro Light";
     font-size: 20px;
     line-height: 150%;
     margin-left: auto;
@@ -163,8 +164,8 @@ article {
 
 .pfigText {
     font-size: 15px;
-    padding-top: 10px;
     padding-left: 5%;
+    padding-top: 10px;
     text-align: center;
     width: 80%;
 }
@@ -187,4 +188,88 @@ article {
     margin-left: auto;
     margin-right: auto;
     width: 70px;
+}
+
+
+/*Edição do Contact*/
+
+.contact {
+    background-color: #eeeeee;
+}
+
+.formContact {
+    text-align: center;
+}
+
+input {
+    border: 1px inset #D3D3D3;
+    border-radius: 2px;
+    font-family: "Myriad Pro Light";
+    height: 30px;
+    margin-top: 10px;
+    width: 450px;
+}
+
+textarea {
+    border: 1px inset #D3D3D3;
+    border-radius: 2px;
+    display: block;
+    font-family: "Myriad Pro Light";
+    height: 150px;
+    margin: 10px auto;
+    width: 450px;
+}
+
+.buttonContact {
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-family: "Myriad Pro Light";
+    font-size: 22px;
+    height: 40px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    width: 150px;
+}
+
+
+/*Edição do footer*/
+
+footer {
+    background-color: #fff;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: "Myriad Pro Light";
+    height: 120px;
+    width: 100%;
+}
+
+.ulFooter {
+    line-height: 30px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.liFooter {
+    color: #6b6b6b;
+    display: inline-block;
+    font-size: 17px;
+}
+
+.liFooter:before {
+    content: ":";
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.liFooter:first-child:before {
+    content: none;
+}
+
+#pFooter {
+    color: #acacac;
+    font-size: 15px;
+    text-align: center;
 }
