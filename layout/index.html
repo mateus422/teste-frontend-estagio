@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <link rel="stylesheet" href="_CSS\style.css">
+    <script type="text/javascript" src="_JS\javascript.js"></script>
     <meta charset="utf-8">
     <meta name="description" content="Wireframe para teste front-end">
     <title>Wireframe</title>
@@ -10,7 +12,7 @@
 
 <body>
     <div class="container">
-        <header>
+        <header id="home">
             <p class="pTitleHeader">We build Awesome Wireframe</p>
             <p class="pSecondHeader">A Template by Your Company</p>
             <img class="imgHeader" src="_imagens/MacbookPro.png" alt="Macbook Pro">
@@ -19,23 +21,23 @@
             <p class="pNav">LOGO</p>
             <ul class="ulNav">
                 <li class="liNav">
-                    <a>Home</a>
+                    <a class="link" href="#home">Home</a>
                 </li>
                 <li class="liNav">
-                    <a>About</a>
+                    <a class="link" href="#about">About</a>
                 </li>
                 <li class="liNav">
-                    <a>Team</a>
+                    <a class="link" href="#team">Team</a>
                 </li>
                 <li class="liNav">
-                    <a>Portfolio</a>
+                    <a class="link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="liNav">
-                    <a>Contact</a>
+                    <a class="link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
-        <section class="about">
+        <section id="about">
             <p class="pTitle">About Us</p>
             <p class="pAbout">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
                 sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -46,7 +48,7 @@
                 aliquet nec, vulputate eget, arcu.
             </p>
         </section>
-        <section class="team">
+        <section id="team">
 
             <p class="pTitle">Our Team</p>
             <p class="pTeam">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -102,19 +104,102 @@
                 </article>
             </div>
         </section>
-        <section></section>
-        <section class="contact">
+        <section id="portfolio">
+            <p class="pTitle">Portfolio</p>
+            <p class="pPortifolio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+                sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <form>
+                <div class="positionPortButton">
+                    <input class="buttonPort" name="All" type="button" value="All">
+                    <input class="buttonPort" name="Design" type="button" value="Design">
+                    <input class="buttonPort" name="identify" type="button" value="Identify">
+                    <input class="buttonPort" name="Photography" type="button" value="Photography">
+                    <input class="buttonPort" name="ilustration" type="button" value="Ilustration">
+                </div>
+                <div class="positionPortImages">
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <img class="imgPort2" src="_imagens/imgPortfolio.png" alt="Image of Portfolio">
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="figurePort">
+                        <h3>Image</h3>
+                        <img class="imgPort1" src="" alt="">
+                        <figcaption class="figPort">
+                            <p class="pFigPort title">Design</p>
+                            <p class="pFigPort text">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit.</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </form>
+        </section>
+        <section id="contact">
             <p class="pTitle">Contact</p>
             <p class="pContact">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
                 sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
             <form class="formContact" method="POST" action="#">
-                <input name="Name" type="text" placeholder="Enter your Name" maxlength="50" required="required">
+                <input class="inputContact" name="Name" type="text" placeholder="Enter your Name" maxlength="50" required="required">
                 <br>
-                <input name="Address" type="email" placeholder="Enter your Address" maxlength="50" required="required">
+                <input class="inputContact" name="Address" type="email" placeholder="Enter your Address" maxlength="50" required="required">
                 <br>
-                <input name="City" type="text" placeholder="Enter your City" maxlength="50" required="required">
+                <input class="inputContact" name="City" type="text" placeholder="Enter your City" maxlength="50" required="required">
                 <br>
-                <input name="Email" type="email" placeholder="Enter your Email Address" maxlength="50" required="required">
+                <input class="inputContact" name="Email" type="email" placeholder="Enter your Email Address" maxlength="50" required="required">
                 <br>
                 <textarea placeholder="Enter your Email Menssage" maxlength="250"></textarea>
                 <input class="buttonContact" type="submit" value="Submit">
@@ -124,19 +209,19 @@
         <footer>
             <ul class="ulFooter">
                 <li class="liFooter">
-                    <a>Home</a>
+                    <a class="link" href="#home">Home</a>
                 </li>
                 <li class="liFooter">
-                    <a>About</a>
+                    <a class="link" href="#about">About</a>
                 </li>
                 <li class="liFooter">
-                    <a>Team</a>
+                    <a class="link" href="#team">Team</a>
                 </li>
                 <li class="liFooter">
-                    <a>Portfolio</a>
+                    <a class="link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="liFooter">
-                    <a>Contact</a>
+                    <a class="link" href="#contact">Contact</a>
                 </li>
             </ul>
             <p id="pFooter">Copyright © Your Company 2014. All Rights Reserved</p>
