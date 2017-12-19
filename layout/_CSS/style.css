@@ -1,7 +1,10 @@
 @charset "utf-8";
 @font-face {
     font-family: "Myriad Pro Light";
-    src: url("_fontes/MyriadPro-Light.otf");
+    src: url("_fontes/myriadpro-light-webfont.eot?#iefix") format('embedded-opentype'),
+         url("_fontes/MyriadPro-Light.otf") format('opentype'),
+         url("_fontes/MyriadPro-Regular.otf") format('opentype'),
+         url("_fontes/MyriadPro-Regular.ttf") format('truetype');
 }
 
 * {
@@ -15,6 +18,38 @@
     max-height: 2160px;
     max-width: 3840px;
     min-width: 550px;
+}
+
+
+/*Partes usadas em varias sections*/
+
+section {
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.pTitle {
+    color: #6b6b6b;
+    font-family: "Myriad Pro Light";
+    font-size: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.pText,
+.pfigText {
+    color: #6b6b6b;
+    font-family: "Myriad Pro Light";
+    font-size: 20px;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    text-align: center;
+    width: 70%;
 }
 
 
@@ -44,7 +79,7 @@
     text-align: center;
 }
 
-.imgHeader {
+.header {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -107,39 +142,7 @@ nav {
 
 /*Edição do section about*/
 
-section {
-    background-color: #fff;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-}
-
-.pTitle {
-    color: #6b6b6b;
-    font-family: "Myriad Pro Light";
-    font-size: 50px;
-    padding-top: 50px;
-    text-align: center;
-}
-
-.pAbout,
-.pTeam,
-.pContact,
-.pPortifolio,
-.pfigText {
-    color: #6b6b6b;
-    font-family: "Myriad Pro Light";
-    font-size: 20px;
-    line-height: 150%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 30px;
-    padding-top: 20px;
-    text-align: center;
-    width: 70%;
-}
-
-.imgAbout {
+.about {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -246,6 +249,92 @@ textarea {
 }
 
 
+/*Edição do Portfolio*/
+
+#portfolio {
+    margin-bottom: 20px;
+}
+
+.positionPortButton {
+    text-align: center;
+}
+
+.positionPortImages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 880px;
+    width: 100%;
+}
+
+.figurePort {
+    background-color: #eeeeee;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    margin: 20px;
+    max-height: 250px;
+    max-width: 250px;
+    width: 100%;
+}
+
+.imgPort2 {
+    height: 250px;
+    width: 250px;
+}
+
+.figPort {
+    background-color: #9a9a9a;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+}
+
+.pFigPort {
+    color: #fff;
+    font-family: "Myriad Pro Light";
+    padding-top: 4%;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 12px;
+}
+
+h3 {
+    color: #6b6b6b;
+    font-family: "Myriad Pro Light";
+    font-size: 30px;
+    line-height: 150px;
+    text-align: center;
+}
+
+.buttonPort {
+    background-color: #fff;
+    border: 1px solid #a1a1a1;
+    border-radius: 2px;
+    color: #a1a1a1;
+    height: 30px;
+    margin-right: 10px;
+    max-width: 100px;
+    transition: 1s;
+    width: 100%;
+}
+
+.buttonPort:focus,
+.buttonPort:hover {
+    border: 1px solid #2c3e50;
+    color: #2c3e50;
+    outline: 0;
+    text-decoration: none;
+    transition: 2s;
+}
+
+
 /*Edição do footer*/
 
 footer {
@@ -286,86 +375,42 @@ footer {
 }
 
 
-/*Edição do Portfolio*/
+/*Media Queries*/
 
-#portfolio {
-    margin-bottom: 20px;
-}
-
-.positionPortButton {
-    text-align: center;
-}
-
-.buttonPort {
-    background-color: #fff;
-    border: 1px solid #a1a1a1;
-    border-radius: 2px;
-    color: #a1a1a1;
-    height: 30px;
-    margin-right: 10px;
-    max-width: 100px;
-    transition: 1s;
-    width: 100%;
-}
-
-.buttonPort:focus,
-.buttonPort:hover {
-    border: 1px solid #2c3e50;
-    color: #2c3e50;
-    outline: 0;
-    text-decoration: none;
-    transition: 2s;
-}
-
-.positionPortImages {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 880px;
-    width: 100%;
-}
-
-.figurePort {
-    background-color: #eeeeee;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 100%;
-    margin: 20px;
-    max-height: 250px;
-    max-width: 250px;
-    width: 100%;
-}
-
-.imgPort2 {
-    height: 250px;
-    width: 250px;
-}
-
-.figPort {
-    background-color: #9a9a9a;
-    bottom: 0;
-    height: 80px;
-    width: 100%;
-}
-
-.pFigPort {
-    color: #fff;
-    font-family: "Myriad Pro Light";
-    padding-top: 4%;
-}
-
-.title {
-    font-size: 20px;
-}
-
-.text {
-    font-size: 12px;
-}
-
-h3 {
-    color: #6b6b6b;
-    font-family: "Myriad Pro Light";
-    font-size: 30px;
-    line-height: 150px;
-    text-align: center;
+@media screen and (min-width: 2048px) {
+    .pTitle {
+        font-size: 70px;
+    }
+    .pTitleUser {
+        font-size: 35px;
+    }
+    .pText,
+    .pfigText {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .inputContact,
+    textarea {
+        font-size: 25px;
+    }
+    .link {
+        font-size: 30px;
+    }
+    .buttonTeam {
+        width: 100px;
+    }
+    .buttonPort {
+        font-size: 25px;
+        max-width: 150px;
+    }
+    .buttonContact {
+        width: 200px;
+    }
+    .about,
+    .header {
+        height: 713px;
+        width: 1000px;
+    }
 }

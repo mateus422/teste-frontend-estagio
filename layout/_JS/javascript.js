@@ -8,78 +8,45 @@ jQuery(document).ready(function ($) {
     });
 });
 
+
 /*Movimentação do Portfolio*/
-jQuery(document).ready(
 
-    function ($) {
-        $(".buttonPort.all").click(
-            function () {
-                $(".figurePort.design").fadeIn();
-                $(".figurePort.identify").fadeIn();
-                $(".figurePort.photography").fadeIn();
-                $(".figurePort.ilustration").fadeIn();
-                $(".figurePort.central").fadeIn();
-            }
-        )
-    }
-);
+function showAll() {
+    $(".figurePort.design").fadeIn();
+    $(".figurePort.identify").fadeIn();
+    $(".figurePort.photography").fadeIn();
+    $(".figurePort.ilustration").fadeIn();
+    $(".figurePort.central").fadeIn();
+}
 
-jQuery(document).ready(
+function showDesign() {
+    $(".figurePort.design").fadeIn();
+    $(".figurePort.identify").fadeOut();
+    $(".figurePort.photography").fadeOut();
+    $(".figurePort.ilustration").fadeOut();
+    $(".figurePort.central").fadeOut();
+}
 
-    function ($) {
-        $(".buttonPort.design").click(
-            function () {
-                $(".figurePort.design").fadeIn();
-                $(".figurePort.identify").fadeOut();
-                $(".figurePort.photography").fadeOut();
-                $(".figurePort.ilustration").fadeOut();
-                $(".figurePort.central").fadeOut();
-            }
-        )
-    }
-);
+function showIdentify() {
+    $(".figurePort.design").fadeOut();
+    $(".figurePort.identify").fadeIn();
+    $(".figurePort.photography").fadeOut();
+    $(".figurePort.ilustration").fadeOut();
+    $(".figurePort.central").fadeOut();
+}
 
-jQuery(document).ready(
+function showPhotography() {
+    $(".figurePort.design").fadeOut();
+    $(".figurePort.identify").fadeOut();
+    $(".figurePort.photography").fadeIn();
+    $(".figurePort.ilustration").fadeOut();
+    $(".figurePort.central").fadeOut();
+}
 
-    function ($) {
-        $(".buttonPort.identify").click(
-            function () {
-                $(".figurePort.design").fadeOut();
-                $(".figurePort.identify").fadeIn();
-                $(".figurePort.photography").fadeOut();
-                $(".figurePort.ilustration").fadeOut();
-                $(".figurePort.central").fadeOut();
-            }
-        )
-    }
-);
-
-jQuery(document).ready(
-
-    function ($) {
-        $(".buttonPort.photography").click(
-            function () {
-                $(".figurePort.design").fadeOut();
-                $(".figurePort.identify").fadeOut();
-                $(".figurePort.photography").fadeIn();
-                $(".figurePort.ilustration").fadeOut();
-                $(".figurePort.central").fadeOut();
-            }
-        )
-    }
-);
-
-jQuery(document).ready(
-
-    function ($) {
-        $(".buttonPort.ilustration").click(
-            function () {
-                $(".figurePort.design").fadeOut();
-                $(".figurePort.identify").fadeOut();
-                $(".figurePort.photography").fadeOut();
-                $(".figurePort.ilustration").fadeIn();
-                $(".figurePort.central").fadeOut();
-            }
-        )
-    }
-);
+function showIlustration() {
+    $(".figurePort.design").fadeOut();
+    $(".figurePort.identify").fadeOut();
+    $(".figurePort.photography").fadeOut();
+    $(".figurePort.ilustration").fadeIn();
+    $(".figurePort.central").fadeOut();
+}
