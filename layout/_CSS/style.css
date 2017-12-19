@@ -1,10 +1,7 @@
 @charset "utf-8";
 @font-face {
     font-family: "Myriad Pro Light";
-    src: url("_fontes/myriadpro-light-webfont.eot?#iefix") format('embedded-opentype'),
-         url("_fontes/MyriadPro-Light.otf") format('opentype'),
-         url("_fontes/MyriadPro-Regular.otf") format('opentype'),
-         url("_fontes/MyriadPro-Regular.ttf") format('truetype');
+    src: url("_fontes/myriadpro-light-webfont.eot?#iefix") format('embedded-opentype'), url("_fontes/MyriadPro-Light.otf") format('opentype'), url("_fontes/MyriadPro-Regular.otf") format('opentype'), url("_fontes/MyriadPro-Regular.ttf") format('truetype');
 }
 
 * {
@@ -195,57 +192,15 @@ article {
 .buttonTeam {
     background-image: url("../_imagens/email.png");
     background-size: 100%;
+    border: none;
     border-radius: 3px;
     display: block;
     height: 35px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    outline: 0;
     width: 70px;
-}
-
-
-/*Edição do Contact*/
-
-#contact {
-    background-color: #eeeeee;
-}
-
-.formContact {
-    text-align: center;
-}
-
-.inputContact {
-    border: 1px inset #D3D3D3;
-    border-radius: 2px;
-    font-family: "Myriad Pro Light";
-    height: 30px;
-    margin-top: 10px;
-    width: 450px;
-}
-
-textarea {
-    border: 1px inset #D3D3D3;
-    border-radius: 2px;
-    display: block;
-    font-family: "Myriad Pro Light";
-    height: 150px;
-    margin: 10px auto;
-    width: 450px;
-}
-
-.buttonContact {
-    background-color: #2c3e50;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-family: "Myriad Pro Light";
-    font-size: 22px;
-    height: 40px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-    text-align: center;
-    width: 150px;
 }
 
 
