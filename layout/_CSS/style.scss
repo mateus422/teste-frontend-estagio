@@ -1,0 +1,429 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Myriad Pro Light";
+    src: url("_fontes/myriadpro-light-webfont.eot?#iefix") format('embedded-opentype'), url("_fontes/MyriadPro-Light.otf") format('opentype'), url("_fontes/MyriadPro-Regular.otf") format('opentype'), url("_fontes/MyriadPro-Regular.ttf") format('truetype');
+}
+
+$font: "Myriad Pro Light";
+@mixin link {
+    color: #8e98a2;
+    text-decoration: none;
+    transition: 1s;
+    &:hover,
+    &:active {
+        color: #fff;
+        transition: 2s;
+    }
+}
+
+@mixin pfigPort {
+    color: #fff;
+    font-family: $font;
+    padding-top: 4%;
+}
+
+@mixin input {
+    border: 1px inset #D3D3D3;
+    border-radius: 2px;
+    font-family: $font;
+}
+
+
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Configurações gerais do site*/
+.container{
+    box-sizing: border-box;
+    margin:auto;
+    max-height: 2160px;
+    max-width: 3840;
+    min-width: 550px;
+
+    section{
+        background-color: #fff;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+
+        .pTitle{
+            color: #6b6b6b;
+            font-family: $font;
+            font-size: 50px;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .pText{
+            color: #6b6b6b;
+            font-family: $font;
+            font-size: 20px;
+            line-height: 150%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 30px;
+            padding-top: 20px;
+            text-align: center;
+            width: 70%;
+        }
+    }
+}
+
+
+/*Edição do Home*/
+
+#home{
+    display: block;
+    background-color: #2c3e50;
+    height: 100%;
+    margin:auto;
+    padding-bottom: 40px;
+    padding-top: 100px;
+    width: 100%;
+
+    .pTitleHeader{
+        color: #8e98a2;
+        font-family: $font;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .pSecondHeader{
+        color: #8e98a2;
+        font-family: $font;
+        font-size: 30px;
+        line-height: 200%;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+    }
+}
+
+/*Edição do nav*/
+
+nav{
+    background-color: #2c3e50;
+    border-bottom: 1px solid #000000;
+    height: 50px;
+    max-width: 3840px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .link{
+        @include link;
+    }
+
+    .pNav{
+        color: #fff;
+        float: left;
+        font-family: $font;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 150%;
+        padding-left: 20%;
+    }
+
+    ul{
+        float: right;
+        font-family: $font;
+        list-style-type: none;
+        padding-right: 20%;
+    }
+
+    li{
+        color: #8e98a2;
+        display: inline-block;
+        line-height: 300%;
+        margin-right: 35px;
+    }
+}
+
+/*Edição do About*/
+
+#about{
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Edição do Our Team*/
+
+#team{
+    background-color: #eeeeee;
+
+    div{
+        display: block;
+        margin-left: 16%;
+        margin-right: auto;
+    }
+
+    article{
+        display: inline-block;
+        height: 20%;
+        width: 20%;
+    }
+
+    .pTitleUser{
+        color: #6b6b6b;
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 5%;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .pfigText{
+        color: #6b6b6b;
+        font-family: $font;
+        font-size: 15px;
+        line-height: 150%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-top: 10px;
+        text-align: center;
+        width: 80%;
+    }
+
+    img{
+        display: block;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    input{
+        background-image: url("../_imagens/email.png");
+        background-size: 100%;
+        border: none;
+        border-radius: 3px;
+        display: block;
+        height: 35px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70px;
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+
+/*Edição do Portfolio*/
+
+#portfolio{
+    margin-bottom: 20px;
+
+    .positionPortButton{
+        text-align: center;
+    }
+
+    .positionPortImages{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 880px;
+        width: 100%;
+    }
+
+    figure{
+        background-color: #eeeeee;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 100%;
+        margin: 20px;
+        max-height: 250px;
+        max-width: 250px;
+        width: 100%;
+    }
+
+    img{
+        height: 250px;
+        width: 250px;
+    }
+
+    figcaption {
+        background-color: #9a9a9a;
+        bottom: 0;
+        box-sizing: border-box;
+        height: 80px;
+        width: 100%;
+    }
+
+    .title{
+        @include pfigPort;
+        font-size: 20px;
+    }
+
+    .text{
+        @include pfigPort;
+        font-size: 12px;
+    }
+
+    h3{
+        color: #6b6b6b;
+        font-family: $font;
+        font-size: 30px;
+        line-height: 150px;
+        text-align: center;
+    }
+
+    input{
+        background-color: #fff;
+        border: 1px solid #a1a1a1;
+        border-radius: 2px;
+        color: #a1a1a1;
+        height: 30px;
+        margin-right: 10px;
+        max-width: 100px;
+        transition: 1s;
+        width: 100%;
+
+        &:focus, &:hover{
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+            outline: 0;
+            text-decoration: none;
+            transition: 2s;
+        }
+    }
+}
+
+/*Edição do Contact*/
+
+#contact{
+    background-color: #eeeeee;
+
+    form{
+        text-align: center;
+    }
+
+    input {
+        @include input;
+        height: 30px;
+        margin-top: 10px;
+        width: 450px;
+    }
+
+    textarea{
+        @include input;
+        display: block;
+        height: 150px;
+        margin: 10px auto;
+        width: 450px;
+    }
+
+    .buttonContact{
+        background-color: #2c3e50;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-family: $font;
+        font-size: 22px;
+        height: 40px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        text-align: center;
+        width: 150px;
+        
+        &:focus{
+            outline: 0;
+        }
+    }
+}
+
+/*Edição do Footer*/
+
+footer{
+    background-color: #fff;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    height: 120px;
+    width: 100%;
+
+    .link{
+        @include link;
+    }
+
+    ul{
+        line-height: 30px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    li{
+        color: #6b6b6b;
+        display: inline-block;
+        font-size: 17px;
+
+        &:before{
+            content: ":";
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        &:first-child:before{
+            content: none;
+        }
+    }
+
+    p{
+        color: #acacac;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/*Media Queries*/
+@media screen and (min-width:2048px) {
+    .container section .pTitle {
+        font-size: 70px;
+    }
+    #team .pTitleUser {
+        font-size: 35px;
+    }
+    .container section .pText,
+    #team .pfigText {
+        font-size: 30px;
+    }
+    #portfolio .text {
+        font-size: 16px;
+    }
+    #contact input,
+    textarea {
+        font-size: 25px;
+    }
+    .link {
+        font-size: 30px;
+    }
+    #team input {
+        width: 100px;
+    }
+    #portfolio input {
+        font-size: 25px;
+        max-width: 150px;
+    }
+    .buttonContact {
+        width: 200px;
+    }
+    #about img,
+    #home img {
+        height: 713px;
+        width: 1000px;
+    }
+}
